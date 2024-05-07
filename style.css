@@ -625,14 +625,15 @@ span {
   .hobbies p {
     font-size: 7px;
   }
+}
+@media screen and (max-width: 768px) {
+  /* Adjust scrollbar width */
   ::-webkit-scrollbar {
-    width: 8px;
+      width: 7px;
   }
   
+  /* Adjust scrollbar thumb color */
   ::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-  }
-  ::-webkit-scrollbar-track {
-    background-color: var(--bg-color);
+      background: var(--main-color);
   }
 }
