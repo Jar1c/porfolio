@@ -588,6 +588,8 @@ span {
   }
   .home-img img {
     margin-top: -2rem;
+    height: 250px;
+    width: 250px;
   }
   .about {
     flex-direction: column-reverse;
@@ -596,8 +598,8 @@ span {
     margin: 0 2rem 4rem;
   }
   .about img {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
