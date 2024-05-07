@@ -625,4 +625,14 @@ span {
   .hobbies p {
     font-size: 7px;
   }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+  }
 }
