@@ -25,6 +25,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
+
 /*.home{
   background-image: url(img/background.gif);
   background-repeat: no-repeat;
@@ -40,7 +41,9 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  overflow: hidden;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -130,6 +133,7 @@ span {
   margin-top: 1.5rem;
   line-height: 1;
 }
+
 .home-content h1 span {
   color: var(--main-color);
   text-shadow: 0 0 20px var(--main-color);
@@ -292,13 +296,16 @@ span {
   background: var(--secondary-bg-color);
   color: white;
 }
+
 .about h2 span {
   color: var(--main-color);
   text-shadow: 0 0 50px var(--main-color);
 }
+
 .about-img {
   border-radius: 50%;
 }
+
 .about-img img {
   position: relative;
   width: 32vw;
@@ -310,20 +317,25 @@ span {
   height: 500px;
   width: 500px;
 }
+
 .about-img img:hover {
   box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color);
 }
+
 .heading {
   text-align: center;
   font-size: 8rem;
 }
+
 .about-content h2 {
   text-align: left;
   line-height: 1.5;
 }
+
 .about-content h3 {
   font-size: 2.6rem;
 }
+
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
@@ -353,31 +365,39 @@ span {
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
+
 ::-webkit-scrollbar-track {
   background-color: var(--bg-color);
 }
+
 .portfolio h1 {
   text-align: center;
   color: white;
   margin-bottom: 100px;
 }
+
 .portfolio h1 span {
   color: var(--main-color);
   text-shadow: 0 0 50px var(--main-color);
 }
+
 .portfolio {
-  padding: 70px;
+  padding: 0;
   margin: auto;
   font-size: 28px;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-color);
+  position: relative;
 }
+
 .hobbies-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   margin-top: px;
 }
+
 .hobbies {
   border-radius: 10px;
   position: relative;
@@ -385,6 +405,7 @@ span {
   border: 5px solid cyan;
   box-shadow: 0 0 25px var(--main-color);
 }
+
 .hobbies img {
   width: 100%;
   height: 100%;
@@ -392,9 +413,11 @@ span {
   display: flex;
   flex-wrap: wrap;
 }
+
 .hobbies:hover img {
   transform: scale(1.1);
 }
+
 .layer {
   width: 100%;
   height: 0%;
@@ -414,15 +437,18 @@ span {
   cursor: pointer;
   transition: height 0.6s;
 }
+
 .hobbies:hover .layer {
   height: 100%;
 }
+
 .layer h3 {
   font-weight: 500px;
   margin-bottom: 20px;
   font-size: 30px;
   color: aqua;
 }
+
 .skills {
   background-color: var(--secondary-bg-color);
 }
@@ -431,25 +457,30 @@ span {
 .contact {
   background-color: var(--bg-color);
 }
+
 .contact h2 {
   margin-bottom: 3rem;
   color: white;
 }
+
 .contact h2 span {
   color: var(--main-color);
   text-shadow: 0 0 50px var(--main-color);
 }
+
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
 }
+
 .contact form .input-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
@@ -462,6 +493,7 @@ span {
   margin: 1rem 0;
   resize: none;
 }
+
 .footer {
   position: relative;
   bottom: 0;
@@ -469,11 +501,13 @@ span {
   padding: 40px 0;
   background-color: var(--secondary-bg-color);
 }
+
 .footer .social {
   text-align: center;
   padding-bottom: 25px;
   color: var(--main-color);
 }
+
 .footer .social a {
   font-size: 25px;
   color: var(--main-color);
@@ -487,12 +521,14 @@ span {
   margin: 0 10px;
   transition: 0.3s ease-in-out;
 }
+
 .footer .social a:hover {
   transform: scale(1.2) translateY(-5px);
   background-color: var(--main-color);
   color: var(--text-color);
   box-shadow: 0 0 25px var(--main-color);
 }
+
 .footer ul {
   margin-top: 0;
   padding: 0;
@@ -501,19 +537,23 @@ span {
   margin-bottom: 0;
   text-align: center;
 }
+
 .footer ul li a {
   color: white;
   border-bottom: 3px solid transparent;
   transition: 0.3s ease-in-out;
 }
+
 .footer ul li a:hover {
   color: var(--main-color);
   border-bottom: 3px solid var(--main-color);
 }
+
 .footer ul li {
   display: inline-block;
   padding: 0 15px;
 }
+
 .footer .copyright {
   margin-top: 50px;
   text-align: center;
@@ -525,30 +565,37 @@ span {
   html {
     font-size: 55%;
   }
+
   .services-container {
     padding-bottom: 7rem;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 5rem;
   }
 }
+
 @media (max-width: 991px) {
   header {
     padding: 2rem 3%;
   }
+
   section {
     padding: 10rem 3% 2rem;
   }
+
   .services {
     padding-bottom: 7rem;
   }
+
   .footer {
     padding: 2rem 3%;
   }
 }
+
 @media (max-width: 895px) {
   #menu-icon {
     display: block;
   }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -562,78 +609,96 @@ span {
     border-bottom: 2px solid var(--main-color);
     display: none;
   }
+
   .navbar.active {
     display: block;
   }
+
   .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
     color: white;
   }
+
   .home {
     flex-direction: column;
     margin: 5rem 4rem;
   }
+
   .home-content h3 {
     font-size: 2.6rem;
   }
+
   .home-content h1 {
     font-size: 8rem;
     margin-top: 3rem;
   }
+
   .home-content p {
     max-width: 600px;
     margin: auto;
   }
+
   .home-img img {
     margin-top: -2rem;
     height: 250px;
     width: 250px;
   }
+
   .about {
     flex-direction: column-reverse;
   }
+
   .about-content .btn {
     text-align: center;
     display: inline-block;
   }
+
   .about-content {
     margin: 0 2rem 4rem;
   }
+
   .about img {
     height: 300px;
     width: 300px;
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
+
   .portfolio .hobbies-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
   }
+
   .hobbies {
     margin-bottom: 30px;
   }
+
   .hobbies img {
     width: 100%;
     height: 150px;
   }
+
   .hobbies h3 {
     font-size: 15px;
   }
+
   .hobbies p {
     font-size: 7px;
   }
 }
+
 @media screen and (max-width: 768px) {
+
   /* Adjust scrollbar width */
   ::-webkit-scrollbar {
-      width: 7px;
+    width: 7px;
   }
-  
+
   /* Adjust scrollbar thumb color */
   ::-webkit-scrollbar-thumb {
-      background: var(--main-color);
+    background: var(--main-color);
   }
 }
