@@ -689,7 +689,7 @@ span {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   /* Adjust scrollbar width */
   ::-webkit-scrollbar {
@@ -701,3 +701,10 @@ span {
     background: var(--main-color);
   }
 }
+@media (max-width: 750px) {
+  .hobbies img{
+    height: 100%;
+    width: 100%;
+  }
+}
+  
