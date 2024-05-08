@@ -706,5 +706,12 @@ span {
     height: 100%;
     width: 100%;
   }
+  .hobbies {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid cyan;
+    box-shadow: 0 0 25px var(--main-color);
+  }
 }
   
