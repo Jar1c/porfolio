@@ -374,6 +374,7 @@ span {
   text-align: center;
   color: white;
   margin-bottom: 100px;
+  font-size: 65px;
 }
 
 .portfolio h1 span {
@@ -699,7 +700,7 @@ span {
   }
 }
 @media (max-width: 750px) {
-  .hobbies img{
+  .hobbies img {
     height: 100%;
     width: 100%;
   }
@@ -713,20 +714,20 @@ span {
 }
 
 /*my skills*/
-.skills{
+.skills {
   background-color: var(--secondary-bg-color);
 }
-.skills h2 span{
+.skills h2 span {
   color: var(--main-color);
   text-shadow: 0 0 50px var(--main-color);
 }
-.skills .timeline{
+.skills .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
-.skills .timeline::after{
-  content: '';
+.skills .timeline::after {
+  content: "";
   position: absolute;
   width: 6px;
   background: var(--main-color);
@@ -736,17 +737,17 @@ span {
   margin-left: -3px;
   z-index: -2px;
 }
-.skills .container{
+.skills .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
-.skills .content{
+.skills .content {
   color: black;
 }
-.education .container::after{
-  content: '\f501';
+.education .container::after {
+  content: "\f501";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -763,14 +764,14 @@ span {
   font-family: serif;
   color: rgb(255, 0, 0);
 }
-.skills .left{
+.skills .left {
   left: 0;
 }
-.skills .right{
+.skills .right {
   left: 50%;
 }
-.education .left::before{
-  content: '';
+.education .left::before {
+  content: "";
   height: 0;
   position: absolute;
   top: 22px;
@@ -781,8 +782,8 @@ span {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent var(--main-color);
 }
-.education .left::before{
-  content: '';
+.education .left::before {
+  content: "";
   height: 0;
   position: absolute;
   top: 22px;
@@ -793,52 +794,51 @@ span {
   border-width: 10px 10px 10px 0;
   border-color: transparent var(--main-color) transparent transparent;
 }
-.skills .right::after{
+.skills .right::after {
   left: -16px;
 }
-.skills .content{
+.skills .content {
   background: var(--main-color);
   position: relative;
   border-radius: 6px;
 }
-.skills .content .tag{
+.skills .content .tag {
   font-size: 1.5rem;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
-.skills .content .decs{
+.skills .content .decs {
   margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
-.skills .content .decs h2{
+.skills .content .decs h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.skills .content .decs p{
+.skills .content .decs p {
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-@media screen and (max-width:895px) {
-  .skills .timeline{
+@media screen and (max-width: 895px) {
+  .skills .timeline {
     margin-top: 2rem;
   }
-  .education .timeline::after{
+  .education .timeline::after {
     left: 31px;
   }
-  .education .container{
+  .education .container {
     width: 100%;
     padding-left: 8rem;
     padding-right: 2rem;
   }
-  .skills .container::after{
+  .skills .container::after {
     font-size: 2.2rem;
   }
-  .education .container::before{
+  .education .container::before {
     left: 61px;
     border: medium solid var(--main-color);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--main-color) transparent transparent;
   }
 }
-  
