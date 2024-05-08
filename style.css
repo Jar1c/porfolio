@@ -691,13 +691,9 @@ span {
 }
 
 @media (max-width: 768px) {
-
-  /* Adjust scrollbar width */
   ::-webkit-scrollbar {
     width: 7px;
   }
-
-  /* Adjust scrollbar thumb color */
   ::-webkit-scrollbar-thumb {
     background: var(--main-color);
   }
