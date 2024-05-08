@@ -382,7 +382,7 @@ span {
 }
 
 .portfolio {
-  padding: 0;
+  padding: 60px;
   margin: auto;
   font-size: 28px;
   display: flex;
