@@ -847,7 +847,7 @@ span {
   position: relative;
   transform: translateY(100px);
   opacity: 0;
-  transition: all 1.5s ease-in-out;
+  transition: all 10s ease;
 } 
 .reveal.active{
   transform: translateY(1px);
@@ -859,7 +859,7 @@ span {
   position: relative;
   transform: translateX(100px);
   opacity: 0;
-  transition: all 1.5s ease;
+  transition: all 1s ease;
 }
 .another.active{
   transform: translateX(1px);
@@ -869,7 +869,7 @@ span {
   position: relative;
   transform: translateX(-100px);
   opacity: 0;
-  transition: all 1.5s ease;
+  transition: all 1s ease;
 }
 .another1.active{
   transform: translateX(1px);
