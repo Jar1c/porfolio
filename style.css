@@ -43,7 +43,6 @@ body {
   z-index: -1;
   overflow: hidden;
 }
-
 .header {
   position: fixed;
   top: 0;
@@ -843,35 +842,34 @@ span {
   }
 }
 /*animation scroll*/
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(100px);
   opacity: 0;
-  transition: all 10s ease;
-} 
-.reveal.active{
+  transition: all 1s ease;
+}
+.reveal.active {
   transform: translateY(1px);
   opacity: 1;
 }
 
-
-.another{
+.another {
   position: relative;
   transform: translateX(100px);
   opacity: 0;
   transition: all 1s ease;
 }
-.another.active{
+.another.active {
   transform: translateX(1px);
   opacity: 1;
 }
-.another1{
+.another1 {
   position: relative;
   transform: translateX(-100px);
   opacity: 0;
   transition: all 1s ease;
 }
-.another1.active{
+.another1.active {
   transform: translateX(1px);
   opacity: 1;
 }
