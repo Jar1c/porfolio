@@ -835,7 +835,7 @@ span {
   .skills .container::after {
     font-size: 2.2rem;
   }
-  .education .container::before {
+  .skills .container::before {
     left: 61px;
     border: medium solid var(--main-color);
     border-width: 10px 10px 10px 0;
