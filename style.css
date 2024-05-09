@@ -853,3 +853,25 @@ span {
   transform: translateY(1px);
   opacity: 1;
 }
+
+
+.another{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.another.active{
+  transform: translateX(1px);
+  opacity: 1;
+}
+.another1{
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.another1.active{
+  transform: translateX(1px);
+  opacity: 1;
+}

@@ -66,7 +66,7 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-content reveal">
+        <div class="about-content another1">
             <h2 class="heading">About <span>Me</span></h2>
 
             <p> Hello! I'm Jaric Mosley S. Calderon, 19-year-old from Maypajo, Caloocan City. I was born and raised in
@@ -103,7 +103,7 @@
                 <h1 class="sub-title reveal">Hobbies & <span>Interest</span></h1>
                 <div class="hobbies-list">
 
-                    <div class="hobbies reveal">
+                    <div class="hobbies another1">
                         <img src="img/gaming.jpg" alt="">
                         <div class="layer">
                             <h3>Playing Video Games</h3>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies reveal ">
+                    <div class="hobbies reveal">
                         <img src="img/travel2.jpg" alt="">
                         <div class="layer">
                             <h3>Travelling</h3>
@@ -126,7 +126,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies reveal">
+                    <div class="hobbies another">
                         <img src="img/gadgets.jpg" alt="">
                         <div class="layer">
                             <h3>Gadgets</h3>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies reveal">
+                    <div class="hobbies another1">
                         <img src="img/watching.png" alt="">
                         <div class="layer">
                             <h3>Watching Movies/Anime</h3>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies reveal">
+                    <div class="hobbies another">
                         <img src="img/adruino.jpg" alt="">
                         <div class="layer">
                             <h3>Adruino</h3>
@@ -178,7 +178,7 @@
     <section class="skills" id="skills">
         <h2 class="heading reveal">My <span>Skills</span></h2>
         <div class="timeline reveal">
-            <div class="container right reveal">
+            <div class="container right another">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -190,7 +190,7 @@
                 </div>
             </div>
 
-            <div class="container left reveal">
+            <div class="container left another1">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -202,7 +202,7 @@
                 </div>
             </div>
 
-            <div class="container right reveal">
+            <div class="container right another">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -214,7 +214,7 @@
                 </div>
             </div>
 
-            <div class="container left reveal">
+            <div class="container left another1">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -226,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="container right reveal">
+            <div class="container right another">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -256,8 +256,8 @@
             </div>
 
             <div class="input-box reveal">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="Submit" value="Send Message" class="btn">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="Submit" value="Send Message" class="btn">
             </div>
         </form>
     </section>
@@ -299,34 +299,101 @@
 
     <script type="text/javascript">
         window.addEventListener('DOMContentLoaded', () => {
-    reveal();
-});
+            reveal();
+        });
 
-window.addEventListener('scroll', reveal);
+        window.addEventListener('scroll', reveal);
 
-function reveal() {
-    var reveals = document.querySelectorAll('.reveal');
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
 
-    for (var i = 0; i < reveals.length; i++) {
+            for (var i = 0; i < reveals.length; i++) {
 
-        var windowHeight = window.innerHeight;
-        var revealTop = reveals[i].getBoundingClientRect().top;
-        var revealPoint = 150;
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
 
-        if (revealTop < windowHeight - revealPoint) {
-            if (!reveals[i].classList.contains('active')) {
-                reveals[i].classList.add('active');
+                if (revealTop < windowHeight - revealPoint) {
+                    if (!reveals[i].classList.contains('active')) {
+                        reveals[i].classList.add('active');
+                    }
+                }
+                else {
+                    if (reveals[i].classList.contains('active')) {
+                        reveals[i].classList.remove('active');
+                    }
+                }
             }
         }
-        else {
-            if (reveals[i].classList.contains('active')) {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
-}
-
     </script>
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', () => {
+            reveal();
+        });
+
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.another');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    if (!reveals[i].classList.contains('active')) {
+                        reveals[i].classList.add('active');
+                    }
+                }
+                else {
+                    if (reveals[i].classList.contains('active')) {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', () => {
+            reveal();
+        });
+
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.another1');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    if (!reveals[i].classList.contains('active')) {
+                        reveals[i].classList.add('active');
+                    }
+                }
+                else {
+                    if (reveals[i].classList.contains('active')) {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        }
+    </script>
+
+
 
     <script src="script.js"></script>
 </body>
