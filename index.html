@@ -25,11 +25,11 @@
         </nav>
     </header>
 
-    <section class="home" id="home">
+    <section class="home reveal" id="home">
 
         <video src="video/background.mp4" autoplay muted loop></video>
 
-        <div class="home-img">
+        <div class="home-img reveal">
             <img src="img/jaric.jpg" alt="" />
         </div>
 
@@ -66,7 +66,7 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-content">
+        <div class="about-content reveal">
             <h2 class="heading">About <span>Me</span></h2>
 
             <p> Hello! I'm Jaric Mosley S. Calderon, 19-year-old from Maypajo, Caloocan City. I was born and raised in
@@ -90,7 +90,7 @@
 
         </div>
 
-        <div class="about-img">
+        <div class="about-img reveal">
             <img src="img/jaric2.jpg" alt="">
         </div>
     </section>
@@ -100,10 +100,10 @@
     <section>
         <div class="portfolio" id="portfolio">
             <div class="container">
-                <h1 class="sub-title">Hobbies & <span>Interest</span></h1>
+                <h1 class="sub-title reveal">Hobbies & <span>Interest</span></h1>
                 <div class="hobbies-list">
 
-                    <div class="hobbies">
+                    <div class="hobbies reveal">
                         <img src="img/gaming.jpg" alt="">
                         <div class="layer">
                             <h3>Playing Video Games</h3>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies">
+                    <div class="hobbies reveal ">
                         <img src="img/travel2.jpg" alt="">
                         <div class="layer">
                             <h3>Travelling</h3>
@@ -126,7 +126,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies">
+                    <div class="hobbies reveal">
                         <img src="img/gadgets.jpg" alt="">
                         <div class="layer">
                             <h3>Gadgets</h3>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies">
+                    <div class="hobbies reveal">
                         <img src="img/watching.png" alt="">
                         <div class="layer">
                             <h3>Watching Movies/Anime</h3>
@@ -148,7 +148,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies">
+                    <div class="hobbies reveal">
                         <img src="img/rubiks.jpg" alt="">
                         <div class="layer">
                             <h3>Puzzle solving</h3>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
 
-                    <div class="hobbies">
+                    <div class="hobbies reveal">
                         <img src="img/adruino.jpg" alt="">
                         <div class="layer">
                             <h3>Adruino</h3>
@@ -176,9 +176,9 @@
     </section>
 
     <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="timeline">
-            <div class="container right">
+        <h2 class="heading reveal">My <span>Skills</span></h2>
+        <div class="timeline reveal">
+            <div class="container right reveal">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -190,7 +190,7 @@
                 </div>
             </div>
 
-            <div class="container left">
+            <div class="container left reveal">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -202,7 +202,7 @@
                 </div>
             </div>
 
-            <div class="container right">
+            <div class="container right reveal">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -214,7 +214,7 @@
                 </div>
             </div>
 
-            <div class="container left">
+            <div class="container left reveal">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -226,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="container right">
+            <div class="container right reveal">
                 <div class="content">
                     <div class="tag">
                         <h2>University</h2>
@@ -246,21 +246,23 @@
         <h2 class="heading">Contact <span>Me</span></h2>
 
         <form action="#">
-            <div class="input-box">
+            <div class="input-box reveal">
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email">
             </div>
-            <div class="input-box">
+            <div class="input-box reveal">
                 <input type="number" placeholder="Phone Number">
                 <input type="text" placeholder="Subject">
             </div>
 
+            <div class="input-box reveal">
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="Submit" value="Send Message" class="btn">
+            </div>
         </form>
     </section>
 
-    <footer class="footer">
+    <footer class="footer reveal">
 
         <div class="social">
             <a href="https://www.instagram.com/jar1cc/"><i class='bx bxl-instagram'></i></a>
@@ -295,6 +297,36 @@
         </p>
     </footer>
 
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', () => {
+    reveal();
+});
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+            if (!reveals[i].classList.contains('active')) {
+                reveals[i].classList.add('active');
+            }
+        }
+        else {
+            if (reveals[i].classList.contains('active')) {
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+}
+
+    </script>
 
     <script src="script.js"></script>
 </body>
