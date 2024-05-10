@@ -1,10 +1,12 @@
+
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-
-window.onscroll = () => {
+// Regular function for window scroll event
+window.onscroll = function() {
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
@@ -19,8 +21,9 @@ window.onscroll = () => {
         }
     })
 }
-menuIcon.onclick = () => {
+
+// Regular function for menu icon click event
+menuIcon.onclick = function() {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
-
