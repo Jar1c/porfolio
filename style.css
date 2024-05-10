@@ -844,7 +844,7 @@ span {
 /*animation scroll*/
 .reveal {
   position: relative;
-  transform: translateY(100px);
+  transform: translateY(150px);
   opacity: 0;
   transition: all 1s ease;
 }
@@ -855,7 +855,7 @@ span {
 
 .another {
   position: relative;
-  transform: translateX(100px);
+  transform: translateX(150px);
   opacity: 0;
   transition: all 1s ease;
 }
@@ -865,7 +865,7 @@ span {
 }
 .another1 {
   position: relative;
-  transform: translateX(-100px);
+  transform: translateX(-150px);
   opacity: 0;
   transition: all 1s ease;
 }
