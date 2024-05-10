@@ -591,7 +591,7 @@ span {
   }
 }
 
-@media (max-width: 895px) {
+@media (max-width: 768px) {
   #menu-icon {
     display: block;
   }
@@ -698,7 +698,7 @@ span {
     background: var(--main-color);
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .hobbies img {
     height: 100%;
     width: 100%;
@@ -819,7 +819,7 @@ span {
   font-weight: 500;
 }
 
-@media screen and (max-width: 895px) {
+@media screen and (max-width: 768px) {
   .skills .timeline {
     margin-top: 2rem;
   }
