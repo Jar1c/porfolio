@@ -74,7 +74,7 @@ body {
   color: white;
   margin-left: 4rem;
   font-weight: 500;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
   border-bottom: 3px solid transparent;
 }
 
@@ -594,6 +594,10 @@ span {
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
+  }
+
+  .container  h1{
+    font-size: 25px;
   }
 
   .navbar {
