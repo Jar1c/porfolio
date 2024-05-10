@@ -827,10 +827,10 @@ span {
   .skills .timeline {
     margin-top: 2rem;
   }
-  .education .timeline::after {
+  .skills .timeline::after {
     left: 31px;
   }
-  .education .container {
+  .skills .container {
     width: 100%;
     padding-left: 8rem;
     padding-right: 2rem;
