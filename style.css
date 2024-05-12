@@ -823,28 +823,7 @@ span {
   font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
-  .skills .timeline {
-    margin-top: 2rem;
-  }
-  .skills .timeline::after {
-    left: 31px;
-  }
-  .skills .container {
-    width: 100%;
-    padding-left: 8rem;
-    padding-right: 2rem;
-  }
-  .skills .container::after {
-    font-size: 2.2rem;
-  }
-  .skills .container::before {
-    left: 61px;
-    border: medium solid var(--main-color);
-    border-width: 10px 10px 10px 0;
-    border-color: transparent var(--main-color) transparent transparent;
-  }
-}
+
 /*animation scroll*/
 .reveal {
   position: relative;
